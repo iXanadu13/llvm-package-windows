@@ -1,4 +1,4 @@
-$llvm_version = "13.0.0"
+$llvm_version = "14.0.6"
 
 # Check if scoop is installed
 if (!(Get-Command "scoop" -errorAction SilentlyContinue)) {
@@ -61,5 +61,6 @@ function build-msvc {
     Remove-Item $source_dir -Force -Recurse -Confirm:$false
 }
 
-build-msvc "msvc16" "Visual Studio 16 2019"
-build-msvc "msvc15" "Visual Studio 15 2017"
+build-msvc "msvc17" "Visual Studio 17 2022"
+# build-msvc "msvc16" "Visual Studio 16 2019"
+# build-msvc "msvc15" "Visual Studio 15 2017"
